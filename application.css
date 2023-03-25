@@ -1,0 +1,171 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*
+ * Color scheme:
+ * Primary Color: #3772ff ---- 244eb2(Darkened)
+ * text: #3a4e7b
+ * #e7eefa (light)
+ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* Home Page Styles */
+* {
+	-fx-primary-color: #3772ff;
+	-fx-secondary-color: #244eb2;
+	-fx-light-grey-color: #d1d1d1;
+    -fx-text-color: #3a4e7b;
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.root {
+	-fx-background-color: White;
+}
+
+/* List view styling */
+#competitonsView {
+	 -fx-background-color: transparent;
+}
+.list-cell {
+	 -fx-background-color: "White";
+	 -fx-font-size: 20;
+	 -fx-text-fill: #3a4e7b;
+}
+.Team-based {
+	 -fx-background-color: linear-gradient(to right, #FFF 5%, #591FBF); 
+	 
+	 -fx-font-size: 20;
+	 -fx-text-fill: Black;
+}
+.Individual-based {
+	 -fx-background-color: linear-gradient(to right, #FFF 5%, #A4E8CC);
+	 
+	 -fx-font-size: 20;
+	 -fx-text-fill: Black;
+}
+.list-cell:filled:hover {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: -fx-secondary-color;
+    -fx-text-fill: white;
+}
+.Team-based:filled:hover {
+    -fx-background-color: #591FBF;
+    -fx-text-fill: white;
+}
+.Team-based:filled:selected:focused, .Team-based:filled:selected {
+    -fx-background-color: #4503bf;
+    -fx-text-fill: white;
+}
+.Individual-based:filled:hover {
+	-fx-background-color: #A4E8CC;
+	-fx-text-fill: black;
+}
+.Individual-based:filled:selected:focused, .Team-based:filled:selected {
+    -fx-background-color: #62e0ac;
+    -fx-text-fill: black;
+}
+/* Controllers */
+#removeButton, #addButton {
+	-fx-background-radius: 5em;
+	-fx-font-size: 23;
+	
+}
+.button {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.button:hover {
+	-fx-background-color: -fx-secondary-color;
+	-fx-text-fill: white;
+}
+#filterBox, #sortBox {
+	  -fx-background-color: -fx-primary-color;
+	  -fx-text-fill: white;
+	 -fx-mark-color: white;
+	 -fx-font-size: 15;
+}
+#filterBox .label, #sortBox .label {
+	-fx-text-fill: white;
+}
+.choice-box .menu-item > .label, #filterBox .menu-item > .label, #sortBox .menu-item > .label{
+	-fx-text-fill: #3a4e7b;
+}
+.choice-box .menu-item:focused > .label, #filterBox .menu-item:focused > .label, #sortBox .menu-item:focused > .label  { -fx-text-fill: white; }
+.choice-box .menu-item:focused { -fx-background-color: -fx-primary-color; }
+
+.text-field {
+	-fx-text-fill: #3a4e7b;
+	-fx-font-size: 20;
+}
+
+ #searchTf {
+ 	-fx-text-fill: #3a4e7b;
+	-fx-font-size: 25;
+}
+
+/* Table views */
+.table-view {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background {
+    -fx-background-color: #e7eefa;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Date Picker Styles */
+.date-picker {
+	-fx-font-size: 20;
+}
+.date-picker .arrow-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+	-fx-background-color: -fx-secondary-color;
+}
+.date-picker .arrow-button .arrow {
+	-fx-background-color: white;
+}
+.date-picker .cell {
+	-fx-background-color: white;
+}
+.date-picker .cell:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .cell:focused {
+	-fx-background-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker .selected:focused {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker-popup  {
+	-fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: -fx-primary-color;
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: white;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: -fx-secondary-color;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+	-fx-background-color: white;
+}
